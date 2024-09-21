@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="flex items-center justify-between p-3 mb-4 border-b border-gray-400 shadow-md">
-      <div className="logo-container">
+      <div className="max-w-60">
         <img className="w-60 h-auto" src={logo} />
       </div>
       <div >
