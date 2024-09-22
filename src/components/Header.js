@@ -1,4 +1,4 @@
-import logo from "../../imgs/svg/logo-no-background.svg";
+import logo from "../../imgs/new_logo.png"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between p-3 mb-4 border-b border-gray-400 shadow-md">
       <div className="max-w-60">
-        <img className="w-60 h-auto" src={logo} />
+        <img className="w-50 h-auto mx-6" src={logo} />
       </div>
       <div >
         <ul className="flex">
