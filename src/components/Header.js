@@ -32,12 +32,12 @@ const Header = () => {
           <li className=" m-4 p-2 text-[17.5px]  text-gray-800 font-kanit font-normal">
             <Link to="/About">About Us</Link>
           </li>
-          <li className=" m-4 p-2 text-[17.5px]  text-gray-800 font-kanit font-normal">
+        {/*   <li className=" m-4 p-2 text-[17.5px]  text-gray-800 font-kanit font-normal">
             <Link to="/Contact">Contact Us</Link>
-          </li>
+          </li> */}
           <li className=" m-4 p-2 text-[17.5px]  text-gray-800 font-kanit font-normal">Cart</li>
           <button
-            className=" m-4 p-2 text-[17.5px]  text-gray-800 font-kanit font-normal"
+            className=" m-4 p-2 text-[17.5px] text-white font-kanit font-light bg-[#FF851B] rounded-2xl cursor-pointer hover:bg-[#E76B00]"
             onClick={() => {
               btnNameReact === "Login"
                 ? setbtnNameReact("Logout")

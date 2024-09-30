@@ -9,19 +9,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
-
+.login-btn{
+    margin: 10px;
+    border: #fafafa solid 1px;
+    background-color: #FF851B;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
 
 /** 
-* {
-    margin: 0;
-    padding: 0;
-  }
-  a:-webkit-any-link {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-  }
 .header{
     display:flex;
     justify-content: space-between;
@@ -145,28 +146,8 @@
 .filter-btn:hover{
     background-color: rgba(189, 188, 188, 0.1);
 }
-.shimmer-container{
-    display: flex;
-    flex-wrap: wrap;
-    display: flex;
-    overflow: hidden;
-}
-.shimmer-card{
-    height: 270px;
-    width: 200px;    
-    margin: 10px;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(-45deg, #eee 40%, #fafafa 50%, #eee 60%);
-    background-size: 300%;
-    background-position-x: 100%;
-    animation: shimmer 1s infinite linear;
-}
-@keyframes shimmer {
-    to {
-       background-position-x: 0%
-    }
- }
+
+
 
  .filter{
     display: flex;

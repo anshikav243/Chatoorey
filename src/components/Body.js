@@ -22,13 +22,15 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
+   {/**  const data = await fetch(
       "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65200&lng=77.16630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",  {
         headers: {
         'x-cors-api-key': 'temp_460d559a81db3d1041396c4916717ed8'
         }
       }
-    );
+    ); */}
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65200&lng=77.16630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     const json = await data.json();
     console.log(json);
     setlistOfRestaurants(
@@ -74,7 +76,7 @@ const Body = () => {
             </button>
           </div>
           <button
-            className="border border-gray-600 mr-2 py-1 px-2 rounded-2xl text-[#414449] font-semibold text-[14px] mx-8"
+            className="border border-gray-600 mr-2 py-1 px-2 rounded-2xl text-[#414449] font-semibold text-[14px] mx-8 hover:bg-[#efebeb]"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4
