@@ -7,12 +7,12 @@ import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
-import Shimmer from "./components/Shimmer";
+
 
 
 const AppLayout = () => {
     return <div className="app">
-        <Header/>
+        <Header />
         <Outlet/>
     </div>;
 };

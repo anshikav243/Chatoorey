@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { IoMdSearch } from "react-icons/io";
 import { withHeaderRestaurantCard } from "./RestaurantCard";
+import { CORS_API_KEY } from "../utils/constants";
 {
   /**https://proxy.cors.sh/ append before swiggy api */
 }
@@ -22,15 +23,15 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-   {/**  const data = await fetch(
+     const data = await fetch(
       "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65200&lng=77.16630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",  {
         headers: {
-        'x-cors-api-key': 'temp_460d559a81db3d1041396c4916717ed8'
+        'x-cors-api-key': CORS_API_KEY
         }
       }
-    ); */}
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65200&lng=77.16630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+    ); 
+    {/*const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65200&lng=77.16630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"); */}
     const json = await data.json();
     console.log(json);
     setlistOfRestaurants(
